@@ -1,0 +1,62 @@
+<odoo>
+    <data>
+        <record id="aparcamiento3" model="garaje.aparcamiento">
+          <field name="name">Calle Tres</field>
+          <field name="plazas">25</field>
+        </record> 
+
+        <record id="aparcamiento4" model="garaje.aparcamiento">
+          <field name="name">Calle Cuatro</field>
+          <field name="plazas">44</field>
+        </record>
+
+        <record id="coche5" model="garaje.coche">
+          <field name="name">1212A</field>
+          <field name="modelo">IkerCoche1</field>
+          <field name="construido">2010-02-22</field>
+          <field name="consumo">4.0</field>
+          <field name="averiado">True</field>
+          <field name="descripcion">Un clasicazo</field>
+          <field name="aparcamiento_id" ref="aparcamiento3"></field>
+        </record> 
+
+        <record id="coche6" model="garaje.coche">
+          <field name="name">3131Pe</field>
+          <field name="modelo">IkerCoche2</field>
+          <field name="construido">1980-10-06</field>
+          <field name="consumo">11.5</field>
+          <field name="averiado">0</field>
+          <field name="descripcion">Aparato</field>
+          <field name="aparcamiento_id" ref="aparcamiento3"></field>
+        </record> 
+        <record id="coche7" model="garaje.coche">
+          <field name="name">9999Ce</field>
+          <field name="modelo">IkerCoche3</field>
+          <field name="construido">1999-03-21</field>
+          <field name="consumo">4.0</field>
+          <field name="averiado">False</field>
+          <field name="descripcion">Se acercan curvas</field>
+          <field name="aparcamiento_id" ref="aparcamiento3"></field>
+        </record>  
+
+        <record id="moto1" model="garaje.moto">
+          <field name="nameM">1234Ji</field>
+          <field name="modeloM">IkerMoto1</field>
+          <field name="construidoM">1999-03-21</field>
+          <field name="consumoM">5.0</field>
+          <field name="averiadoM">False</field>
+          <field name="descripcionM">Moto 1 de Celia</field>
+          <field name="aparcamiento_idM" ref="aparcamiento3"></field>
+        </record> 
+
+        <record id="moto2" model="garaje.moto">
+          <field name="nameM">9876Ja</field>
+          <field name="modeloM">IkerMoto2</field>
+          <field name="construidoM">1980-10-06</field>
+          <field name="consumoM">4</field>
+          <field name="averiadoM">False</field>
+          <field name="descripcionM">Moto 2 de Celia</field>
+          <field name="aparcamiento_idM" ref="aparcamiento3"></field>
+        </record>
+    </data>
+</odoo>
